@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KahaniKorner</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        main {
+            text-align: center;
+            margin: 50px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #ecf9f2;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .action-button {
+            background-color: #45a049;
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .action-button:hover {
+            background-color: #3f8742;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KahaniKorner</h1>
+    </header>
+    <main>
+        <h2>Welcome to KahaniKorner</h2>
+        <div class="action-buttons">
+            <button class="action-button" onclick="location.href='/create'">Create a Blog</button>
+            <button class="action-button" onclick="location.href='/read'">Read a Blog</button>
+        </div>
+    </main>
+</body>
+</html>

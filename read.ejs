@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read a Blog - KahaniKorner</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        header a {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        main {
+            text-align: left;
+            margin: 50px;
+        }
+
+        .blog-content {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            font-size: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KahaniKorner</h1>
+        <button><a href="/">Back</a></button><a href="/">Back</a>
+    </header>
+    <main>
+        <h2>Read a Blog</h2>
+        <% posts.forEach(post => { %>
+            <div class="blog-content">
+                <h3><%= post.title %></h3>
+                <p><%= post.content %></p>
+                <p>Date: <%= post.date.toDateString() %></p>
+            </div>
+        <% }); %>
+    </main>
+</body>
+</html>
